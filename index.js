@@ -1,23 +1,20 @@
-var express = require('express');
-var router = express.Router();
+import 'bootstrap/dist/css/bootstrap.css';
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import './index.css';
+import Navbar from './Navbar';
+import Card from './Card';
+import Footer from './Footer';
+import Header from './Header';
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
 
-/* GET TheComp home page. */
-router.get('/thecomp', function(req, res) {
-  res.render('thecomp', { title: 'TheComp' });
-});
 
-/* GET cart page. */
-router.get('/cart', function(req, res) {
-  res.render('cart', { title: 'Cart'});
-});
+ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<div>
+    <Header />
+    <Navbar />
+    <Card />
+    <Footer />
+</div>, document.getElementById('root'));
 
-/* GET Explore page. */
-router.get('/explore', function(req, res) {
-  res.render('explore', { title: 'Explore'});
-});
-module.exports = router;
