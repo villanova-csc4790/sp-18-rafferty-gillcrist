@@ -35,13 +35,13 @@ export default class navigation extends Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/Yoga/">Yoga</NavLink>
+                <NavLink href="/yoga/">Yoga</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/Lifting/">Lifting</NavLink>
+                <NavLink href="/lifting/">Lifting</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/Running/">Running</NavLink>
+                <NavLink href="/running/">Running</NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
@@ -49,7 +49,7 @@ export default class navigation extends Component {
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
-                    Our Story
+                    <NavLink href="/ourstory/">Our Story</NavLink>
                   </DropdownItem>
                   <DropdownItem>
                     Leadership
